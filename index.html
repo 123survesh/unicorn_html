@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unicorn's are awesome</title>
+	<link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="./unicorn.css">
+
+	<style type="text/css">
+		#card-4 img:hover{
+			animation-name: imageGrow;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes imageGrow {
+		    0%   {height: 50px;}
+		    25%  {height: 100px;}
+		    50%  {height: 200px;}
+		    100% {height: 400px;}
+		}
+	</style>
+</head>
+<body>
+	<div id="nav-bar">
+		<div><a href="#card-1">start</a></div>
+		<div><a href="#card-2">defenition</a></div>
+		<div><a href="#card-3">jokes</a></div>
+		<div><a href="#card-4">food</a></div>
+	</div>
+	<div class="card" id="card-1">
+		<video id="unicorn-video" src="./assets/videos/unicorn.mp4" autoplay muted loop></video>
+		<div class="card-1-text-wrapper">
+			<span class="card-1-text">I LOVE</span><br>
+			<span class="card-1-text">UNICORNS......!!!!</span>
+		</div>
+	</div>
+	<div class="card" id="card-2">
+	
+			<div class="image-wrapper">
+				<img src="./assets/img/unicorn.png">
+			</div>
+			<div class="quote-wrapper">
+				Unicorn:
+				<blockquote>
+					The unicorn is a legendary creature that has been described since antiquity as a beast with a single large, pointed, spiraling horn projecting from its forehead.
+				</blockquote>
+			</div>
+	</div>
+	<div class="card" id="card-3">
+		<div>
+			<span>Unicorn's are funny</span>
+			<a title="CLICK ME!!" onclick="document.getElementById('unicorn-joke').play()">
+				<img src="./assets/img/funny.png">
+			</a>
+		</div>
+		<div>
+			<ul>
+				<li>
+					 <p>What is the difference between a unicorn and a carrot? 
+					 One is a funny beast and the other is a bunny feast.</p>
+
+
+				</li>
+				<li>
+					<p>
+						 What do unicorns call their father?
+						 "Pop" corn.
+					</p>
+				</li>
+				<li>
+					<p>
+						 What looks like half a unicorn?
+						 The other half.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="card" id="card-4" style="font-family:Silly_Unicorn; font-size: 36px;background-color: #f8e9d6;">
+		<div style="display:inline-block;top:50%;left:50%;transform:translate(-50%,-50%);position: relative;">
+			<span>Unicorn's </span><span style="color: #FF2626;font-size: 72px">&#9829;</span><img src="./assets/img/cupcake.png" height="50px">
+			
+		</div>
+	</div>
+	<audio id="unicorn-joke" src="./assets/audio/unicorn.mp3"></audio>
+</body>
+</html>
